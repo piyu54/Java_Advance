@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class StudentDao {
 
 	public void fetchAllData() throws Exception {
-		Class.forName("com.sql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/JDBC", "root", "root");
 
 		Statement s = con.createStatement();
@@ -24,7 +24,7 @@ public class StudentDao {
 	}
 
 	public void insertData() throws Exception {
-		Class.forName("com.sql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/JDBC", "root", "root");
 
 		Statement s = con.createStatement();
@@ -42,12 +42,12 @@ public class StudentDao {
 	}
 
 	public void updateData() throws Exception {
-		Class.forName("com.sql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/JDBC", "root", "root");
 
 		Statement s = con.createStatement();
 
-		int c = s.executeUpdate("update student set name='piyali' where id=101");
+		int c = s.executeUpdate("update student set name='piyaaa' where id=101");
 		if (c > 0) {
 			System.out.println("Data inserted");
 		} else {
@@ -58,7 +58,7 @@ public class StudentDao {
 	}
 
 	public void deleteData() throws Exception {
-		Class.forName("com.sql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/JDBC", "root", "root");
 
 		Statement s = con.createStatement();
