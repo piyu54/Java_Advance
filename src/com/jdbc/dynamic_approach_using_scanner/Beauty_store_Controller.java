@@ -6,7 +6,7 @@ public class Beauty_store_Controller {
 		
 		Beauty_store_Dao b= new Beauty_store_Dao();
 //		b.insertProduct();
-		b.updateProduct();
-		
+//		b.updateProduct();
+		b.deleteProduct();
 	}
 }

@@ -14,4 +14,10 @@ public class Beauty_store_Service {
 		Beauty_store_Dao b=new Beauty_store_Dao();
 		b.updateProduct();
 	}
+	
+	public void deleteproductdata() throws Exception
+	{
+		Beauty_store_Dao b=new Beauty_store_Dao();
+		b.deleteProduct();
+	}
 }
