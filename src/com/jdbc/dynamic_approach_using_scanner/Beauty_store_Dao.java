@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class Beauty_store_Dao {
 
@@ -66,4 +67,18 @@ public class Beauty_store_Dao {
 		}
 	}
 
+	public void fetchproduct() throws Exception {
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Beauty_store", "root", "root");
+
+		PreparedStatement ps = con.prepareStatement("select*from beauty_product");
+		ResultSet check=ps.executeQuery();
+
+		while(check.next())
+		{
+			System.out.println(check.getInt(1) +" "+check.getString(2)+" "+check.getInt(3)+ " "+check.getInt(4));
+		}
+	}
 }
+
