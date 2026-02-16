@@ -1,4 +1,4 @@
-package com.jdbc.dynamic_approach_notusing_scanner;
+package com.jdbc.dynamic_approach_using_scannerr;
 
 import java.util.Scanner;
 

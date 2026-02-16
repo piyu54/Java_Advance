@@ -1,4 +1,4 @@
-package com.jdbc.dynamic_approach_notusing_scanner;
+package com.jdbc.dynamic_approach_not_using_scanner;
 
 public class Beauty_store_Service {
 

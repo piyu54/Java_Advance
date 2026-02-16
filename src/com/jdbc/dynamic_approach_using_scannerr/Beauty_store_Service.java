@@ -1,4 +1,4 @@
-package com.jdbc.dynamic_approach_using_scanner;
+package com.jdbc.dynamic_approach_using_scannerr;
 
 public class Beauty_store_Service {
 
