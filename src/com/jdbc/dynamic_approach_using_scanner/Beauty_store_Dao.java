@@ -26,7 +26,7 @@ public class Beauty_store_Dao {
 		ps.setString(2, "Lipstick");
 		ps.setInt(3, 10);
 		ps.setInt(4, 2000);
-		ps.addBatch();
+//		ps.addBatch();
 		
 		ps.executeBatch();
 
@@ -64,7 +64,7 @@ public class Beauty_store_Dao {
 
 		PreparedStatement ps = con.prepareStatement("delete from beauty_product where id=?");
 
-		ps.setInt(1, 10);
+		ps.setInt(1, 102);
 		
 
 		int check = ps.executeUpdate();
