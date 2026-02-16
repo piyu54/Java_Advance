@@ -8,4 +8,10 @@ public class Beauty_store_Service {
 		Beauty_store_Dao b=new Beauty_store_Dao();
 		b.insertProduct();
 	}
+	
+	public void updateproductdata() throws Exception
+	{
+		Beauty_store_Dao b=new Beauty_store_Dao();
+		b.updateProduct();
+	}
 }

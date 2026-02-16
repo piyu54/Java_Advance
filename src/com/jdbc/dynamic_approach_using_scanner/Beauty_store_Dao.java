@@ -1,5 +1,5 @@
 package com.jdbc.dynamic_approach_using_scanner;
-
+//admin
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -31,5 +31,28 @@ public class Beauty_store_Dao {
 		}
 		
 		
+	}
+	
+	public void updateProduct() throws Exception
+	{
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Beauty_store", "root", "root");
+		
+		PreparedStatement ps=con.prepareStatement("update  beauty_product set name=? where id=?");
+		
+		ps.setInt(2, 101);
+		ps.setString(1, "Lipstick");
+		
+		
+		int check=ps.executeUpdate();
+		
+		if(check>0)
+		{
+			System.out.println("Data inserted");
+		}
+		else
+		{
+			System.out.println("Data not inserted");
+		}
 	}
 }
