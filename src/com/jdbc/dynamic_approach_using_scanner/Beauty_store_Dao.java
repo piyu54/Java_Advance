@@ -60,9 +60,9 @@ public class Beauty_store_Dao {
 		int check = ps.executeUpdate();
 
 		if (check > 0) {
-			System.out.println("Data inserted");
+			System.out.println("Data deleted");
 		} else {
-			System.out.println("Data not inserted");
+			System.out.println("Data not deleted");
 		}
 	}
 
