@@ -1,4 +1,4 @@
-package com.jdbc.dynamic_approach_using_scannerr;
+ package com.jdbc.dynamic_approach_using_scannerr;
 
 //admin
 import java.sql.Connection;
