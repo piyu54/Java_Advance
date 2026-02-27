@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Register.css">
+</head>
+<body>
+
+	<section class="container">
+		<div class="left">
+			<h1 class="typing">
+				<span>Join</span> <span>DevConnect</span>
+			</h1>
+			<p>Build your future in tech. Connect, learn, and grow with a
+				community of developers.</p>
+		</div>
+
+		<div class="right">
+			<form class="form" action="RegisterServlet" method="post">
+				<h2>Create Your DevConnect Account</h2>
+
+				<div class="input-group">
+					<input type="text" name="fullname"> <label>Full Name</label>
+				</div>
+
+				<div class="input-group">
+					<input type="email" name="email" required> <label>Email
+						Address</label>
+				</div>
+
+				<div class="input-group">
+					<input type="password" name="password" required> <label>Password</label>
+				</div>
+
+				<div class="row">
+					<div class="input-group small">
+					<input type="date" name="dob" required>
+					</div>
+
+					<div class="input-group small">
+						<select required name="course">
+							<option value="" disabled selected>Course</option>
+							<option>Java</option>
+							<option>Python</option>
+							<option>Full Stack</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" name="agree" value="yes"> <span>I
+						agree to the Terms & Conditions</span>
+				</div>
+
+				<button type="submit">Register Now</button>
+
+				<p class="login-text">
+					Already have an account? <a href="login.html">Login</a>
+				</p>
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>
