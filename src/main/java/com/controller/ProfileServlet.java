@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/ProfileServlet")
 public class ProfileServlet  extends HttpServlet{
-	//
+	
 	 protected void doPost(HttpServletRequest req,
              HttpServletResponse resp)
              throws ServletException, IOException {
