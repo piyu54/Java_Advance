@@ -49,7 +49,7 @@ public class LoginServlet extends HttpServlet {
 
             } else {
 
-                // Login Failed
+                // Login Fail
                 resp.getWriter().println("Invalid Email or Password");
 
             }
